@@ -1,14 +1,14 @@
 <?php 
 
 class Genere { 
-    private string $Genere;
+    private string $nome;
 
 
-public function setGenere($Genere) {
-    if ($Genere !== "horror" || "action" || "cartoon" || "adventures") {
+public function setNome($nome) {
+    if ($nome !== "horror" || $nome !== "action" || $nome !== "cartoon" || $nome !== "adventures") {
         throw new Exception("non è un genere");
     }
-    $this-> Genere = $Genere;
+    $this-> nome = $nome;
 }
 
 }
